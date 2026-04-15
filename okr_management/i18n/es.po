@@ -1,0 +1,463 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* okr_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-02 16:58+0000\n"
+"PO-Revision-Date: 2026-06-02 17:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_management_kanban
+msgid "<i class=\"fa fa-calendar me-1\" title=\"Período\"/>"
+msgstr "<i class=\"fa fa-calendar me-1\" title=\"Período\"/>"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_management_form
+msgid "<span> a </span>"
+msgstr "<span> a </span>"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_form
+msgid "Activate"
+msgstr "Activar"
+
+#. module: okr_management
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_key_result__state__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_search
+msgid "Active KRs"
+msgstr "KRs Activos"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_form
+msgid "Archived / Cancelled"
+msgstr "Archivado / Cancelado"
+
+#. module: okr_management
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_objective__type__aspirational
+msgid "Aspirational"
+msgstr "Aspiracional"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__cadence
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__cadence
+msgid "Cadence"
+msgstr "Cadencia"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: okr_management
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_key_result__state__cancel
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__child_count
+msgid "Child Count"
+msgstr "Cantidad de Hijos"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__child_ids
+msgid "Child OKRs"
+msgstr "OKRs Hijos"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_management_form
+msgid "Ciclo y Período"
+msgstr ""
+
+#. module: okr_management
+#: model:ir.actions.server,name:okr_management.ir_cron_close_objectives_ir_actions_server
+msgid "Close Finished Objectives"
+msgstr "Cerrar Objetivos Finalizados"
+
+#. module: okr_management
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_objective__type__commited
+msgid "Committed"
+msgstr "Comprometido"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__company_ids
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_form
+msgid "Completed"
+msgstr "Completado"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_management_form
+msgid "Configuración"
+msgstr ""
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_form
+msgid "Context"
+msgstr "Contexto"
+
+#. module: okr_management
+#: model_terms:ir.actions.act_window,help:okr_management.action_okr_key_result
+msgid "Create your first Key Result!"
+msgstr "¡Cree su primer Resultado Clave!"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__create_uid
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__create_uid
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__create_date
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__create_date
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_list
+msgid "Current"
+msgstr "Actual"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__current_value
+msgid "Current Value (%)"
+msgstr "Valor Actual (%)"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__name
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__name
+msgid "Description"
+msgstr "Descripción"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__display_name
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__display_name
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__display_name
+msgid "Display Name"
+msgstr "Nombre Mostrado"
+
+#. module: okr_management
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_key_result__state__done
+msgid "Done"
+msgstr "Realizado"
+
+#. module: okr_management
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_key_result__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_management_form
+msgid "Duración"
+msgstr ""
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_management_form
+msgid "Ej: Plan Estratégico 2026"
+msgstr ""
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__date_end
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__date_end
+msgid "End Date"
+msgstr "Fecha de Fin"
+
+#. module: okr_management
+#: model:ir.actions.act_window,name:okr_management.action_okr_management
+msgid "Gestión de OKRs"
+msgstr ""
+
+#. module: okr_management
+#: model:ir.module.category,description:okr_management.module_category_okr
+msgid "Helps manage OKRs, Objectives, and Key Results hierarchy."
+msgstr "Ayuda a gestionar la jerarquía de OKRs, Objetivos y Resultados Clave."
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__id
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__id
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__id
+msgid "ID"
+msgstr "ID"
+
+#. module: okr_management
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_management__level__individual
+msgid "Individual"
+msgstr "Individual"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_form
+msgid "Key Result Description"
+msgstr "Descripción del Resultado Clave"
+
+#. module: okr_management
+#: model:ir.actions.act_window,name:okr_management.action_okr_key_result
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__key_result_ids
+#: model:ir.ui.menu,name:okr_management.menu_okr_key_result
+msgid "Key Results"
+msgstr "Resultados Clave"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_objective_form
+msgid "Key Results (Resultados Clave)"
+msgstr ""
+
+#. module: okr_management
+#: model_terms:ir.actions.act_window,help:okr_management.action_okr_key_result
+msgid ""
+"Key Results track how you achieve your Objectives using measurable targets."
+msgstr ""
+"Los Resultados Clave rastrean cómo usted logra sus Objetivos usando metas "
+"medibles."
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__write_uid
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__write_uid
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__write_date
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__write_date
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__level
+msgid "Level"
+msgstr "Nivel"
+
+#. module: okr_management
+#: model:res.groups,name:okr_management.group_okr_manager
+msgid "Manager"
+msgstr "Administrador"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_form
+msgid "Mark as Done"
+msgstr "Marcar como Realizado"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_form
+msgid "Metrics & Ponderation"
+msgstr "Métricas y Ponderación"
+
+#. module: okr_management
+#: model:ir.actions.act_window,name:okr_management.action_okr_mine
+#: model:ir.ui.menu,name:okr_management.menu_okr_mine
+msgid "Mis OKRs"
+msgstr ""
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_search
+msgid "My Key Results"
+msgstr "Mis Resultados Clave"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__okr_id
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_management_form
+msgid "OKR"
+msgstr "OKR"
+
+#. module: okr_management
+#: model:ir.model,name:okr_management.model_okr_key_result
+msgid "OKR Key Result"
+msgstr "Resultado Clave OKR"
+
+#. module: okr_management
+#: model:ir.model,name:okr_management.model_okr_management
+#: model:ir.module.category,name:okr_management.module_category_okr
+msgid "OKR Management"
+msgstr "Gestión de OKR"
+
+#. module: okr_management
+#: model:ir.model,name:okr_management.model_okr_objective
+msgid "OKR Objective"
+msgstr "Objetivo OKR"
+
+#. module: okr_management
+#: model:ir.ui.menu,name:okr_management.menu_okr_root
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_management_tree
+msgid "OKRs"
+msgstr "OKRs"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__objective_id
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_search
+msgid "Objective"
+msgstr "Objetivo"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__objective_ids
+msgid "Objectives"
+msgstr "Objetivos"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_management_form
+msgid "Objetivos"
+msgstr ""
+
+#. module: okr_management
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_management__level__organization
+msgid "Organization"
+msgstr "Organización"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__parent_id
+msgid "Parent OKR"
+msgstr "OKR Padre"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__progress
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_list
+msgid "Progress"
+msgstr "Progreso"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__progress
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__progress
+msgid "Progress (%)"
+msgstr "Progreso (%)"
+
+#. module: okr_management
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_management__cadence__q1
+msgid "Q1"
+msgstr "Q1"
+
+#. module: okr_management
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_management__cadence__q2
+msgid "Q2"
+msgstr "Q2"
+
+#. module: okr_management
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_management__cadence__q3
+msgid "Q3"
+msgstr "Q3"
+
+#. module: okr_management
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_management__cadence__q4
+msgid "Q4"
+msgstr "Q4"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_form
+msgid "Reset to Draft"
+msgstr "Restablecer a Borrador"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__responsible_id
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__responsible_id
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__responsible_id
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_search
+msgid "Search Key Results"
+msgstr "Buscar Resultados Clave"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_management_form
+msgid "Seleccioná si depende de otro OKR"
+msgstr ""
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__date_start
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__date_start
+msgid "Start Date"
+msgstr "Fecha de Inicio"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__state
+msgid "State"
+msgstr "Estado"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_search
+msgid "Status"
+msgstr "Estado"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_list
+msgid "Target"
+msgstr "Meta"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__target
+msgid "Target (%)"
+msgstr "Meta (%)"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__team_ids
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_management__level__team
+msgid "Team"
+msgstr "Equipo"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__name
+msgid "Title"
+msgstr "Título"
+
+#. module: okr_management
+#: model:ir.ui.menu,name:okr_management.menu_okr_main
+msgid "Todos los OKRs"
+msgstr ""
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_objective__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: okr_management
+#: model:res.groups,name:okr_management.group_okr_user
+msgid "User"
+msgstr "Usuario"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_list
+msgid "Weight"
+msgstr "Peso"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_key_result__weight
+msgid "Weight (%)"
+msgstr "Peso (%)"
+
+#. module: okr_management
+#: model:ir.model.fields,field_description:okr_management.field_okr_management__year
+msgid "Year"
+msgstr "Año"
+
+#. module: okr_management
+#: model:ir.model.fields.selection,name:okr_management.selection__okr_management__cadence__yearly
+msgid "Yearly"
+msgstr "Anual"
+
+#. module: okr_management
+#: model_terms:ir.ui.view,arch_db:okr_management.view_okr_key_result_form
+msgid "e.g., Increase website traffic by 30%"
+msgstr "p. ej., Aumentar el tráfico del sitio web en un 30%"

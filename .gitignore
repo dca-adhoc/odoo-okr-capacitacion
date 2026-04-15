@@ -1,0 +1,9 @@
+*.pyc
+*.pyo
+*~
+__pycache__/
+.inline_stubs/
+.data/
+.vscode/
+.idea/
+*.log

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- 1. Acción de Ventana (Window Action) -->
+    <record id="action_okr_key_result" model="ir.actions.act_window">
+        <field name="name">Key Results</field>
+        <field name="res_model">okr.key.result</field>
+        <field name="view_mode">list,form,search</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first Key Result!
+            </p>
+            <p>
+                Key Results track how you achieve your Objectives using measurable targets.
+            </p>
+        </field>
+    </record>
+
+    <!-- 2. Vista de Lista (List View) con decoradores de color dinámicos -->
+    <record id="view_okr_key_result_list" model="ir.ui.view">
+        <field name="name">okr.key.result.list</field>
+        <field name="model">okr.key.result</field>
+        <field name="arch" type="xml">
+            <list decoration-info="state == 'draft'" 
+                  decoration-success="state == 'active'" 
+                  decoration-muted="state == 'cancel'" 
+                  decoration-warning="state == 'done'">
+                <field name="name"/>
+                <field name="objective_id"/>
+                <field name="responsible_id" widget="many2one_avatar_user"/>
+                <field name="weight" string="Weight"/>
+                <field name="current_value" string="Current"/>
+                <field name="target" string="Target"/>
+                <field name="progress" widget="progressbar" string="Progress"/>
+                <field name="state" widget="badge" 
+                       decoration-info="state == 'draft'" 
+                       decoration-success="state == 'active'" 
+                       decoration-danger="state == 'cancel'" 
+                       decoration-primary="state == 'done'"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- 3. Vista de Formulario (Form View) Limpia y Profesional -->
+    <record id="view_okr_key_result_form" model="ir.ui.view">
+        <field name="name">okr.key.result.form</field>
+        <field name="model">okr.key.result</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_set_active" type="object" string="Activate" 
+                            invisible="state != 'draft'" class="btn-primary"/>
+                    
+                    <button name="action_set_done" type="object" string="Mark as Done" 
+                            invisible="state != 'active'" class="btn-success"/>
+                    
+                    <button name="action_set_cancelled" type="object" string="Cancel" 
+                            invisible="state not in ['draft', 'active']" class="btn-secondary"/>
+                    
+                    <button name="action_set_draft" type="object" string="Reset to Draft" 
+                            invisible="state != 'cancel'" class="btn-link"/>
+                    
+                    <field name="state" widget="statusbar" statusbar_visible="draft,active,done"/>
+                </header>
+                
+                <sheet>
+                    <widget name="web_ribbon" title="Archived / Cancelled" bg_color="text-bg-danger" invisible="state != 'cancel'"/>
+                    <widget name="web_ribbon" title="Completed" bg_color="text-bg-success" invisible="state != 'done'"/>
+
+                    <div class="oe_title">
+                        <label for="name" string="Key Result Description"/>
+                        <h1>
+                            <field name="name" placeholder="e.g., Increase website traffic by 30%"/>
+                        </h1>
+                    </div>
+
+                    <group>
+                        <group name="left_column" string="Context">
+                            <field name="objective_id"/>
+                            <field name="responsible_id" widget="many2one_avatar"/>
+                        </group>
+                        <group name="right_column" string="Metrics &amp; Ponderation">
+                            <field name="weight"/>
+                            <field name="target"/>
+                            <field name="current_value"/>
+                            <field name="progress" readonly="1"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- 4. Vista de Búsqueda y Filtros (Search View) -->
+    <record id="view_okr_key_result_search" model="ir.ui.view">
+        <field name="name">okr.key.result.search</field>
+        <field name="model">okr.key.result</field>
+        <field name="arch" type="xml">
+            <search string="Search Key Results">
+                <field name="name"/>
+                <field name="objective_id"/>
+                <field name="responsible_id"/>
+                
+                <filter name="filter_active" string="Active KRs" domain="[('state', '=', 'active')]"/>
+                <filter name="filter_my_krs" string="My Key Results" domain="[('responsible_id', '=', uid)]"/>
+                
+                <separator/>
+                
+                <filter name="group_by_objective" string="Objective" context="{'group_by': 'objective_id'}"/>
+                <filter name="group_by_status" string="Status" context="{'group_by': 'state'}"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- 5. Vinculación del acceso de Key Results al menú Operations creado en las vistas principales -->
+    <menuitem id="menu_okr_key_result"
+              name="Key Results"
+              parent="menu_okr_root"
+              action="action_okr_key_result"
+              sequence="30"/>
+</odoo>
