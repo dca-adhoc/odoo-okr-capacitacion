@@ -1,0 +1,1 @@
+# odoo-okr-capacitacion
